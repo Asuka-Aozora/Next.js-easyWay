@@ -1,9 +1,9 @@
-// components/Sidebar/Sidebar.tsx
-"use client"; // Karena menggunakan hook navigasi
+
+"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SidebarItem, SidebarProps } from "./Sidebar.types";
+import { SidebarProps } from "./Sidebar.types";
 
 export default function Sidebar({ items }: SidebarProps) {
   const pathname = usePathname();
