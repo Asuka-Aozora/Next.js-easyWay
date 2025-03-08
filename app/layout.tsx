@@ -26,6 +26,7 @@ export default function RootLayout({
         <div className="flex">
           <Sidebar items={sidebarItems} />
           <main className="flex-1 p-8">{children}</main>
+          
         </div>
       </body>
     </html>

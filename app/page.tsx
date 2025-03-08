@@ -1,4 +1,5 @@
 import { MenuItem } from "@/components/MenuItem/MenuItem";
+import ProductData from "./api/productData/ProductData";
 
 const menuItems = [
   { label: "Dashboard", href: "/dashboard", icon: " " },
@@ -14,6 +15,7 @@ export default function Home() {
       {menuItems.map(({ label, href, icon }) => (
         <MenuItem key={label} href={href} label={label} icon={icon} />
       ))}
+      <ProductData />
     </>
   );
 }
